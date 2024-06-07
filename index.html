@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #121212;
+            color: #f8f8f8;
+        }
+        h1 {
+            text-align: center;
+            color: #e0a800;
+        }
+        .menu-section {
+            margin-bottom: 40px;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #444;
+        }
+        .price {
+            color: #e0a800;
+        }
+        .nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #e0a800;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        .hidden {
+            display: none;
+        }
+        h2 {
+            color: #e0a800;
+        }
+        h3 {
+            color: #f8f8f8;
+        }
+    </style>
+    <script>
+        function showMenu(menuId) {
+            document.getElementById('coffee-shop-menu').classList.add('hidden');
+            document.getElementById('restaurant-menu').classList.add('hidden');
+            document.getElementById(menuId).classList.remove('hidden');
+        }
+    </script>
+</head>
+<body>
+    <h1>Our Menus</h1>
+    <div class="nav">
+        <a href="#" onclick="showMenu('coffee-shop-menu')">Coffee Shop Menu</a>
+        <a href="#" onclick="showMenu('restaurant-menu')">Restaurant Menu</a>
+    </div>
+    <div id="coffee-shop-menu" class="menu-section">
+        <h2>Welcome to Our Coffee Shop</h2>
+        <h3>Coffee</h3>
+        <div class="menu-item">
+            <span>Espresso</span>
+            <span class="price">2.50</span>
+        </div>
+        <div class="menu-item">
+            <span>Cappuccino</span>
+            <span class="price">3.50</span>
+        </div>
+        <div class="menu-item">
+            <span>Latte</span>
+            <span class="price">3.75</span>
+        </div>
+        <div class="menu-item">
+            <span>Americano</span>
+            <span class="price">2.75</span>
+        </div>
+        <h3>Tea</h3>
+        <div class="menu-item">
+            <span>Green Tea</span>
+            <span class="price">2.00</span>
+        </div>
+        <div class="menu-item">
+            <span>Black Tea</span>
+            <span class="price">2.00</span>
+        </div>
+        <div class="menu-item">
+            <span>Herbal Tea</span>
+            <span class="price">2.50</span>
+        </div>
+        <h3>Pastries</h3>
+        <div class="menu-item">
+            <span>Croissant</span>
+            <span class="price">2.75</span>
+        </div>
+        <div class="menu-item">
+            <span>Muffin</span>
+            <span class="price">3.00</span>
+        </div>
+        <div class="menu-item">
+            <span>Scone</span>
+            <span class="price">3.25</span>
+        </div>
+    </div>
+    <div id="restaurant-menu" class="menu-section hidden">
+        <h2>Our Restaurant Menu</h2>
+        <h3>Appetizers</h3>
+        <div class="menu-item">
+            <span>Libanais</span>
+            <span class="price">7.500</span>
+        </div>
+        <div class="menu-item">
+            <span>Bruschetta</span>
+            <span class="price">6.50</span>
+        </div>
+        <div class="menu-item">
+            <span>Stuffed Mushrooms</span>
+            <span class="price">7.00</span>
+        </div>
+        <h3>Main Courses</h3>
+        <div class="menu-item">
+            <span>Grilled Salmon</span>
+            <span class="price">15.00</span>
+        </div>
+        <div class="menu-item">
+            <span>Steak</span>
+            <span class="price">20.00</span>
+        </div>
+        <div class="menu-item">
+            <span>Chicken Alfredo</span>
+            <span class="price">14.00</span>
+        </div>
+        <div class="menu-item">
+            <span>Vegetarian Pasta</span>
+            <span class="price">12.00</span>
+        </div>
+        <h3>Desserts</h3>
+        <div class="menu-item">
+            <span>Cheesecake</span>
+            <span class="price">7.00</span>
+        </div>
+        <div class="menu-item">
+            <span>Chocolate Cake</span>
+            <span class="price">6.50</span>
+        </div>
+        <div class="menu-item">
+            <span>Fruit Tart</span>
+            <span class="price">6.00</span>
+        </div>
+        <h3>Beverages</h3>
+        <div class="menu-item">
+            <span>Soft Drink</span>
+            <span class="price">2.00</span>
+        </div>
+        <div class="menu-item">
+            <span>House Wine</span>
+            <span class="price">6.00</span>
+        </div>
+        <div class="menu-item">
+            <span>Coffee</span>
+            <span class="price">2.50</span>
+        </div>
+    </div>
+</body>
+</html>
